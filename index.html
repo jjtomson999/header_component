@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<header>
+
+  <h1>
+    <img src="./images/wed.png" alt="">
+  </h1>  
+
+<div class="inner">
+
+  <div>
+    <ul class="menu_container">
+      <li><a href="NEWS">NEWS</a></li>
+      <li><a href="ABOUT">ABOUT</a></li>
+      <li><a href="BUSINESS">BUSINESS</a></li>
+      <li><a href="COMPANY">COMPANY</a></li>
+    </ul>
+  </div>
+    <div>
+      <button id="contact">お問い合わせ</button>
+    </div>
+</div>
+</header>
+</body>
+<style>
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style-type: none;
+}
+
+/* ここまで共通 */
+h1{
+  font-size: 18px;
+  
+}
+header{
+  height: 85px;
+  background-color: rgb(237, 245, 245);
+  display:flex;
+  align-items: center;
+}
+header h1{
+  padding-left: 14px;
+  font-size: 0;  
+}
+header h1 img{
+  cursor: pointer;  
+}
+
+.inner{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+
+}
+ul.menu_container{
+  display: flex;
+  justify-content:space-around;
+}
+ul.menu_container li:nth-child(1){
+  margin-left: 32px;
+  padding-left:16px;
+  font-size: 14px;
+}
+ul.menu_container li{
+  padding-left: 24px;
+  font-size: 14px;
+}
+
+ul.menu_container li a{
+  text-decoration: none;
+  color: black;
+  
+}
+#contact{
+  position: absolute;
+  height: 85px;
+  color: white;
+  background: black;
+  padding: 32px;
+  width: 200px;
+  right:0;
+  top:0px;
+  width: 170px;
+}
+#contact:hover{
+  opacity: 0.8;
+}
+@media screen and (max-width:900px){
+  header h1{
+    margin-top: 0;
+  }
+  header button{
+    display: none;
+  }
+  header{
+    display: block;
+  }
+ 
+}
+</style>
+</html>
